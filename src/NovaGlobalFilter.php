@@ -1,6 +1,6 @@
 <?php
 
-namespace Nemrutco\NovaGlobalFilter;
+namespace NemrutcoCustom\NovaGlobalFilter;
 
 use Laravel\Nova\Card;
 
