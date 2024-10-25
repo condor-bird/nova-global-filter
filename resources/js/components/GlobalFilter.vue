@@ -91,6 +91,18 @@
                 {{ option.label }}
               </option>
             </select>
+
+            <input
+                  v-if="filter.component === 'input-filter'"
+                  type="text"
+                  class="w-full form-control form-input form-input-bordered"
+                  :id="filter.name"
+                  dusk="input-filter"
+                  name="input-filter"
+                  :value="filter.value || filter.currentValue"
+                  :class="errorClasses"
+                  @input.prevent="handleChange(filter, $event)"
+              />
           </div>
         </div>
       </scroll-wrap>
